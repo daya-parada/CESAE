@@ -1,11 +1,13 @@
 body { 
-    background-color: bisque; 
+    background-color: TOURQUOISE; 
     margin: 20px;
     font-family: Lucida Sans Unicode, Lucida Grande, sans-serif;
 } 
 
 header { 
-    text-align: center; 
+    text-align: center;
+    position:relative;
+    top:0;
 }   
 
 main { 
