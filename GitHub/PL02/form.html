@@ -4,12 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="icon" type="image/x-icon" href="faviconCesae.png">
 </head>
 <body>
+<!------------------------------------------- header ------------------------------------------->
+    <header>
+    <h1>CESAE Digital</h1>
+    <!--Logo -->
+    <a href="https://www.cesaedigital.pt/" target="_blank"><img src="cesae-digital-logo.svg"></a>
+    <!--Link para o site oficial -->
+    <br>
+    </header>
+<!------------------------------------------- navegação ------------------------------------------->
+    <nav>
+        <a href="https://www.cesaedigital.pt/" target="_blank">Ir para o site oficial</a>
+        <a href="https://www.instagram.com/cesae.digital/ "><img src="instagram.jpg" alt="Instagram"></a>
+        <a href="https://www.facebook.com/CesaeDigital "><img src="facebook.png" alt="Facebook"></a>
+        <a href="https://www.youtube.com/@cesaedigital "><img src="youtube.jpg" alt="Youtube"></a>
+        <a href="https://www.linkedin.com/company/cesae-digital "><img src="linkedin.png" alt="LinkedIn"></a>
+    </nav>
+    <div style="border-style: ridge;">
     <h3>Formulário do CESAE</h3>
     <form action="process_form.php" method="post">
         <label for="name">Nome:</label>
-        <input type="text" id="name" name="name" required><br><br>
+        <input type="text" id="name" name="name"  placeholder="Insira seu nome aqui" required><br>
 
         <label for="email">Email:</label>
         <input type="email" id="email" name="email" required><br><br>
@@ -23,11 +41,27 @@
         <label for="date">Data Atual</label>
         <input type="date" id="date" name="date" required><br>
 
-        <label for="message">Mensagem:</label><br>
+        <label option for="turma">Turma:</label>
+        <select id="turma" name="turma" required>
+            <option value="">Selecione uma turma</option>
+            <option value="1a">Software Developer 2026</option>
+            <option value="1b">Data Science 2026</option>
+        </select><br><br>
+
+        <label for="message">Mensagem:</label>
         <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
 
         <input type="reset" value="Limpar">
         <input type="submit" value="Enviar">
-
+        </div>
+<!------------------------------------------- footer ------------------------------------------->
+    <!-- Associados -->
+    <footer>
+    <hr>
+    <h4>Associados</h4>
+    <img src="logo-Pessoas2030.svg"><img src="logo-PRR.svg"><img src="logo-Anqep.svg">
+    <hr>
+    <p>Desenvolvido por Dayane Parada - 2026</p>
+    </footer>
 </body>
 </html>
