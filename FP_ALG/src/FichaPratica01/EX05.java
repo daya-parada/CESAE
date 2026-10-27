@@ -3,6 +3,9 @@ import java.util.Scanner;
 
 public class EX05 {
     public static void main(String[] args) {
+        //input
+        Scanner input = new Scanner(System.in);
+
         //cria as variaveis
         double nota1, nota2, nota3, media;
 
