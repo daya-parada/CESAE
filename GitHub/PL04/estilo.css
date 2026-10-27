@@ -1,14 +1,52 @@
 body { 
-
     background-color: bisque; 
-    margin: 20px; 
-
+    margin: 20px;
+    font-family: Lucida Sans Unicode, Lucida Grande, sans-serif;
 } 
 
-header, nav { 
+header { 
     text-align: center; 
 }   
 
+main { 
+    text-align: justify; 
+    margin: 20px;
+}
+nav { 
+    text-align: left;
+    color: white;
+    background-color: grey;
+    padding: 5px;
+    margin: 10px;
+}
+
+/* redesS é a tag para as redes sociais */
+#redesS {
+    position: relative;
+    top: 3px;
+    left: 32%;
+    color: white;
+    padding: 5px;
+
+}
+
+a:link, a:visited { 
+    color: white; 
+    text-decoration: none; 
+}
+a:hover {
+  color: bisque;
+  text-decoration: underline;
+}
+
+main { 
+    text-align: justify; 
+}
+
 footer { 
-    text-align: center; 
+    color: white;
+    text-align: center;
+    background-color: grey;
+    padding: 5px;
+    margin: 10px;
 }
