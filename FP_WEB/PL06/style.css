@@ -11,7 +11,7 @@ body {
     margin: 12%;
 }
 
-/* (...) cartao para cada pessoa, pra ser possivel manipula-los individualmente */
+/* (...) um cartao para cada pessoa, pra ser possivel manipula-los individualmente */
 .cartao {
     flex: 1;
     border-radius: 25px;
