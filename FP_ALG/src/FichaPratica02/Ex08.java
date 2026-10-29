@@ -12,21 +12,24 @@ public class Ex08 {
         //solicita o input ao utilizador
         System.out.print("Valor da primeira nota: ");
         //define a variavel como o input do utilizador
-        nota1 = input.nextInt();
+        nota1 = input.nextDouble();
 
         System.out.print("Valor da segunda nota: ");
-        nota2 = input.nextInt();
+        //define a variavel como o input do utilizador
+        nota2 = input.nextDouble();
 
         System.out.print("Valor da terceira nota: ");
-        nota3 = input.nextInt();
+        //define a variavel como o input do utilizador
+        nota3 = input.nextDouble();
 
+        //calcula a media
         media = nota1 * 0.25 + nota2 * 0.35 + nota3 * 0.40;
 
-        if (media >= 9.5){
-            System.out.println("Estás aprovado e obteve média " + media);
+        if (media >=9.5){
+            System.out.println("Está aprovado! Obteve média " + media);
         }
         else {
-            System.out.println("Fostes reprovado e obteve média " + media);
+            System.out.println("Foi reprovado! :( Obteve média " + media);
         }
     }
 }
