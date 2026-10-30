@@ -18,8 +18,8 @@ public class Ex09 {
             tentativas = tentativas + 1; //cada ciclo é mais uma tentativa
         }
 
-        tentativas = tentativas -1; //exclui o ultimo ciclo, onde foi inserido o valor correto -1
-        som = som + 1; //elimina o ultimo ciclo, onde foi inserido o valor correto -1
+        tentativas = tentativas -1; //exclui o ultimo ciclo
+        som = som + 1; //exclui  o ultimo ciclo
 
         media = som / tentativas; // a media é o somatorio / numero de tentativas
         System.out.println("Media = " + media + ", Tentativas: " + tentativas);
