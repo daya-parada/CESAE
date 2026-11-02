@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  </head>
+<body>
+    <!-- barra de navegação -->
+<nav class="nav mx-auto">
+    <ul class="nav justify-content-end">
+        <li class="nav-item">
+            <a class="nav-link" href="produtos.html">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="badnews.html">Promoções</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="badnews.html">Contacto</a>
+        </li>
+    </ul>
+</nav>
+<!--Criar uma grid com as seguintes características: ​
+Uma row com um bloco de 6 colunas em ecrã do pc com o vosso nome, que em ecras pequenos abranja 12 colunas. Cor de background: a vossa preferida das cores bootstrap  (que não verde).​
+Uma row com um bloco central que abranja 8 colunas com a seguinte frase: "eu serei um génio da programação" ao centro da coluna, background verde.​ -->
+    <div class="container my-4">
+        <!-- row 1 -->
+        <div class="row"> <!-- uma row com um bloco de 6 colunas, que em ecras pequenos abranja 12 colunas. -->
+            <div class="bg-dark p-3 mx-auto h1 text-center text-white">
+                Bad News
+            </div>
+        </div>
+
+        <!-- row 2 -->
+        <div class="row mt-2"> <!-- margin-top = 2 -->
+            <div class="alert alert-warning fs-12" role="alert">
+            You are going to die!
+            </div>
+        </div>
+
+        <!-- row 3 -->
+        <div class="row mt-2"> <!-- margin-top = 2 -->
+            <button type="button" class="col-3 btn btn-success btn-sm"> Give up and come to Terms With</button>
+            <button type="button" class="col-4 btn btn-danger btn-sm mx-2"> Continue to Deny and live in a fantasy world</button>
+        </div>
+    </div>
+    
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
