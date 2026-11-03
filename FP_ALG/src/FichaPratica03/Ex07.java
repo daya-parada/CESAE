@@ -3,6 +3,7 @@ package FichaPratica03;
 import java.util.Scanner;
 
 public class Ex07 {
+    //um dos ex. mais importantes da ficha, segundo o professor !!incremento!!
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in); //importa ferramentas scanner
 
@@ -12,8 +13,8 @@ public class Ex07 {
 
         while (inteiro <= 100) {
             System.out.println(inteiro);
-            inteiro = inteiro + 1;
-            aux = aux + inteiro;
+            inteiro = inteiro + 1; // inteiro += 1;
+            aux = aux + inteiro; //
         }
 
         System.out.println(aux - 1);

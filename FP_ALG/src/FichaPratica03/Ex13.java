@@ -23,7 +23,6 @@ public class Ex13 {
                 n1 = n1 - 5; // ...atualiza n1 para o maior múltiplo de 5 que é menor ou igual a n1
             }
         }
-
         else { // se n2 for o maior entre os dois inputs (...)
             n2 = n2 - (n2 % 5); // maior múltiplo de 5 que é menor ou igual a n2
             while(n2 >= n1) { // ...enquanto n2 for maior que n1...
@@ -31,7 +30,5 @@ public class Ex13 {
                 n2 = n2 - 5; // atualiza n2 para o multiplo de 5 imediatamente inferior a n2
             }
         }
-
     }
-
 }
