@@ -8,19 +8,16 @@ public class Ex03 {
         System.out.print("Introduza um numero: ");
         num = input.nextInt();
 
-        for (num)
+        // sobre o ciclo for
+        // i é o divisor
+        // (int i = 1) define um contador inicial
+        // (i <= num) é a condição que será verificada a cada iteração
+        // (i++) atualiza o contador
 
-       // if (num%2 == 0) {
-       //     do {
-       //         System.out.println(num);
-       //     } while (num>0);
-       // }
-
-
-
-        //for (int num > 0; num % 2 == 0; num--) {
-        //    System.out.println(num);
-         //}
-
+        for (int i = 1; i <= num; i++) {
+            if (num % i == 0) {
+                System.out.println(i); // imprime apenas se o resto for 0
+            }
+        }
     }
 }
