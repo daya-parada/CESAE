@@ -17,6 +17,7 @@ public class Ex04 {
             System.out.println("Digite 2 para escolher subtracao");
             System.out.println("Digite 3 para escolher multiplicacao");
             System.out.println("Digite 4 para escolher divisao");
+            System.out.println("0 para sair");
             System.out.print("Digite uma opção: ");
             operador = input.nextInt();
             switch (operador) {
@@ -35,6 +36,6 @@ public class Ex04 {
                 default:
                     System.out.print("operador inválido");
             }
-       } while (operador !=0);
+       } while (operador !=4);
     }
 }
