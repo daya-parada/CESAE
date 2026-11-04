@@ -2,28 +2,20 @@ package FichaPratica03;
 
 import java.util.Scanner;
 
-public class Ex15 {
+public class Ex15 { //exercicio flair: o valor deve ser conservado, nao utilize else
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-        int n, num, aux, fatorial = 0;
+        int n=0, fatorial = 1, aux=1;
 
         System.out.print("Introduza um número não negativo: ");
         n = input.nextInt();
-        num = n; // guarda n, para mais tarde imprimir o valor original de n
 
-        while (n > 0) {
-            aux = n; // guarda o n do ciclo anterior
-            System.out.println("aux = n: " + aux);
-
-            n = n - 1; // atualiza n
-            System.out.println("n-1 " + n);
-
-            fatorial = aux * n; // tenta calcular o fatorial
-            System.out.println("aux = n: " + fatorial);
-
-            System.out.println(" -- fim de ciclo -- ");
+        while (aux <= n) {
+           fatorial = fatorial * aux;
+           aux = aux  + 1; // atualiza o ciclo !contador!
+           // System.out.println(" -- fim de ciclo -- ");
         }
-        System.out.print("Somatorio de " + num + " é igual a: " + fatorial);
+        System.out.print("Somatorio de " + n + " é igual a: " + fatorial);
     }
 }
