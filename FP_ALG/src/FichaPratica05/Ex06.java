@@ -8,7 +8,7 @@ public class Ex06 {
 
         int[] vetor = new int [10]; // array de 0 a 9 (tamanho 10)
         int maior=vetor[0]; //inicia a variavel pela primeira posicao i
-        boolean crescente = true; //inicia como true
+        boolean crescente = false; //inicia como false, ja que meu ciclo de verificacao deve ser true
 
         for (int i = 0; i < vetor.length ; i++) { // solicita inputs do 0 ao 9
             System.out.print("Insira no Array [" + i + "]: ");
@@ -19,14 +19,15 @@ public class Ex06 {
         for (int i = 0; i < vetor.length ; i++) {
             if (vetor [i] >= maior) {
                 maior = vetor [i];
-                crescente = true;
+                crescente = true; // iniciei a variavel como false, pra evitar falso positivo
             }
         }
 
+        //imprime o resultado!
         if (crescente) { // crescente == true
-            System.out.println("Crescente");
+            System.out.println("O array é crescente");
         } else {
-            System.out.println("Não crescente");
+            System.out.println("O array não é crescente");
         }
     }
 

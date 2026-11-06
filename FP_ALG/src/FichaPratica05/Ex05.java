@@ -21,9 +21,8 @@ public class Ex05 {
         System.out.println("soma: " + soma);
 
         //calcula a media dos elementos: soma/tamanho total
-        for (int i = 0; i < vetor.length ; i++) { // while i < 10
-            media = soma / vetor.length;
-        }
+        media = soma / vetor.length;
+
         System.out.println("media: " + media);
     }
 }
