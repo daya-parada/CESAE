@@ -21,7 +21,7 @@ public class Ex04 {
                 menor = vetor [i];
             }
         }
-        System.out.print("O maior array [i] é: " + menor);
+        System.out.print("O maior elemento [i] inserido é: " + menor);
 
 
     }

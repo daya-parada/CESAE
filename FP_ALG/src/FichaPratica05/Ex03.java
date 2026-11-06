@@ -22,6 +22,6 @@ public class Ex03 {
                 maior = vetor [i];
             }
         }
-        System.out.print("O maior array [i] é: " + maior);
+        System.out.print("O maior elemento [i] inserido é: " + maior);
     }
 }
