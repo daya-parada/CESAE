@@ -6,18 +6,6 @@ public class Ex07 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-        int num, i;
-        boolean primo = true;
-
-        System.out.println("Digite um número qualquer: ");
-        num = input.nextInt();
-
-            for (int i = 2; i < num; i++) { //contador i
-                if (num%i==0) { // par
-                    System.out.print(i);
-                }
-            }
-            System.out.println("Teste");
         }
-    }
 }
+
