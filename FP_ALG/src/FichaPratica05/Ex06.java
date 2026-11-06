@@ -24,7 +24,7 @@ public class Ex06 {
         }
 
         //imprime o resultado!
-        if (crescente) { // crescente == true
+        if (crescente) {
             System.out.println("O array é crescente");
         } else {
             System.out.println("O array não é crescente");

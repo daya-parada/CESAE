@@ -13,7 +13,6 @@ public class Ex05 {
             System.out.print("Insira no Array [" + i + "]: ");
             vetor [i] = input.nextInt();
         }
-
         //calcula a soma dos elementos
         for (int i = 0; i < vetor.length ; i++) { // while i < 10
             soma = soma + vetor[i];

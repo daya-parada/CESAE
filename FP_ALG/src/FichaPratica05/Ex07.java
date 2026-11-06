@@ -22,7 +22,6 @@ public class Ex07 {
                     maior = vetor [i];
                 }
             }
-
         }
 
         System.out.print("O maior elemento [i] par inserido é: " + maior);
