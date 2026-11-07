@@ -15,8 +15,8 @@ public class Ex04 {
         do {
             System.out.println("Digite 1 para escolher soma");
             System.out.println("Digite 2 para escolher subtracao");
-            System.out.println("Digite 3 para escolher multiplicacao");
-            System.out.println("Digite 4 para escolher divisao");
+            System.out.println("Digite 3 para escolher multiplicação");
+            System.out.println("Digite 4 para escolher divisão");
             System.out.println("0 para sair");
             System.out.print("Digite uma opção: ");
             operador = input.nextInt();
@@ -37,5 +37,7 @@ public class Ex04 {
                     System.out.print("operador inválido");
             }
        } while (operador !=4);
+
+        System.out.print("Obrigado");
     }
 }

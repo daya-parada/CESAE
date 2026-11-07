@@ -6,9 +6,9 @@ import java.util.Scanner;
 public class Ex01 {
     public static void main(String[] args) {
         // cria 3 variaveis
-        int num1, num2, resultado;
+        int num1, num2, soma;
 
-        // define o input de um valor
+        // importa a ferramenta input
         Scanner input = new Scanner(System.in);
 
         // imprime um pedido de input ao usuario
@@ -24,10 +24,10 @@ public class Ex01 {
         num2 = input.nextInt();
 
         // realiza a operaçao
-        resultado = num1 + num2;
+        soma = num1 + num2;
 
         // imprime o resultado da operação
-        System.out.print ("A soma resulta em: " + resultado);
+        System.out.print ("A soma resulta em: " + soma);
 
     }
 }

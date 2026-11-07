@@ -14,6 +14,10 @@ public class Ex06 {
         do {
             System.out.print("Tente advinhar: ");
             aux = input.nextInt();
+            // gambiarra que limpa a consola
+                for (int i = 0; i < 100; i++) {
+                    System.out.println();
+                }
         } while (aux != num);
         System.out.println("Parabens!");
         System.out.println("Player 2 advinhou o número escolhido pelo player 1!");

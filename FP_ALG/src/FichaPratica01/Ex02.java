@@ -5,6 +5,13 @@ import org.w3c.dom.ls.LSOutput;
 import java.util.Scanner;
 public class Ex02 {
     public static void main(String[] args) {
+        //Introduza um número: 20
+        //Introduza outro número: 4
+        //Soma: 24
+        //Subtração: 16
+        //Multiplicação: 80
+        //Divisão: 5
+
         //cria as variaveis
         int num1, num2, soma, subtracao, multiplicacao, divisao;
 
