@@ -110,7 +110,7 @@ function calculaMedia (notaTeste, notaProjeto)  {
         return media
 }
 
-console.log(`Para o(a) aluno(a) ${nome}, a média é ${calculaMedia(20, 19)}`)
+console.log(`Para o(a) aluno(a) ${nome}, a média é = ${calculaMedia(20, 19)}`)
 
 // aprovação ------------------------ xxxx
 if (media < 0 ) {
@@ -140,7 +140,7 @@ if (media > 20) {
 // tabuada da media ----------------- xxxx
 mediaArredondada = (Math.floor(media)) // arredonda a media
 
-console.log ("Tabuada da média: ")
+console.log ("Tabuada da média arredondada: ")
 for (i = 1 ; i <= 10 ; i++) {
     tabuada = mediaArredondada * i
     console.log (`${mediaArredondada} x ${i} = ${tabuada}`)
