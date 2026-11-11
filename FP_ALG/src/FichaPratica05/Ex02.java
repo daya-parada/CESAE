@@ -6,6 +6,10 @@ import java.util.SortedMap;
 public class Ex02 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
+
+        //Implemente um programa que permita adicionar comissões mensais a um array de tamanho 12 (uma posição
+        //para cada mês) e calcular o seu total anual.
+
         int[] vetor = new int[12];  // array de 0 a 11
         int soma=0;
 

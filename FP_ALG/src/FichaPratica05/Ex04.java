@@ -5,6 +5,8 @@ import java.util.Scanner;
 public class Ex04 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
+
+        // Escreva um programa que lê um array de tamanho 10 e encontra o menor elemento.
         int[] vetor = new int [10]; // array de 0 a 9 (tamanho 10)
 
 
