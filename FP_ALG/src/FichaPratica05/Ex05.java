@@ -6,6 +6,8 @@ public class Ex05 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
+        // Escreva um programa que lê um array de tamanho 10 e calcula a média dos elementos
+
         int[] vetor = new int [10]; // array de 0 a 9 (tamanho 10)
         int soma=0, media=0;
 

@@ -5,6 +5,8 @@ import java.util.Scanner;
 public class Ex09 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
+
+        // Escreva um programa que lê uma matriz de tamanho 5x5 e imprima a soma de todos os elementos
         int[][] matriz = new int[5][5]; //define uma matrix 5*5
         int soma=0;
 

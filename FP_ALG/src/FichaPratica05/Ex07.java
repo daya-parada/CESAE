@@ -6,6 +6,9 @@ public class Ex07 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
+        //Implemente um programa que armazene num array 10 valores pedidos ao utilizador, e retorne o maior valor par
+        //inserido. Caso não exista, deverá informar o utilizador.
+
         int[] vetor = new int [10]; // array de 0 a 9 (tamanho 10)
         int maior=vetor[0]; // ao inves de definir maior=0. inicia na primeira posicao. Isso evita que, caso todos os arrayz sejam negativos, o for a seguir devolva 0 como o maior elemento
 

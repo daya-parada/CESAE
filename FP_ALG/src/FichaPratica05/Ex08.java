@@ -5,6 +5,10 @@ import java.util.Scanner;
 public class Ex08 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
+
+        // Implemente um programa que permita adicionar 9 números inteiros (ler input do utilizador) a uma matriz 3x3
+        //e que os imprima com o seguinte aspeto gráfico
+
         int[ ][ ] matriz = new int[3][3]; //define uma matrix 3*3
 
         // solicita elementos de linhas E colunas

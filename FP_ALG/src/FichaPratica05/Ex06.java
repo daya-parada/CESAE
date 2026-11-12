@@ -6,6 +6,7 @@ public class Ex06 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
+        //Escreva um programa que lê um array de tamanho 10 e verifica se os elementos estão em ordem crescente.
         int[] vetor = new int [10]; // array de 0 a 9 (tamanho 10)
         int maior=vetor[0]; //inicia a variavel pela primeira posicao i
         boolean crescente = false; //inicia como false, ja que meu ciclo de verificacao deve ser true
