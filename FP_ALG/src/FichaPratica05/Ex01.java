@@ -6,7 +6,6 @@ public class Ex01 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-
         //Implemente um programa que permita adicionar 10 números inteiros a um array e que os imprima pela ordem
         //de inserção. Exemplo de execução:
 

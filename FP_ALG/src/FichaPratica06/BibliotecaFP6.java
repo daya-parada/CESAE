@@ -1,17 +1,18 @@
 package FichaPratica06;
 import java.util.Scanner;
-public class Biblioteca {
+public class BibliotecaFP6 {
     static Scanner input = new Scanner(System.in);
 
     //  Exercicio 1 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
     /**
      * Solicita o nome de um animal
-     * @return o barulho que o animal faz
+     * @param animal
      */
     static void fazerBarulho(String animal) {
-        switch (animal) { // seria melhor (animal.toLowerCase())
+        switch (animal.toLowerCase()) {
             case "cao":
+            case "cão":
                 System.out.println("Au au au");
                 break;
             case "gato":
@@ -35,6 +36,7 @@ public class Biblioteca {
 
     /**
      * Solicita um número até que seja inteiro e positivo
+     *
      * @return o número positivo inserido
      */
     static int lerInteiroPositivo() {
@@ -49,14 +51,14 @@ public class Biblioteca {
     }
 
     /**
-     * A partir de um numero i
-     * @return imprime numa linha um número de asteriscos i
+     * Imprime um dado numero de asteriscos
+     * @param numero
      */
-    static void imprimirAsteriscos(int quantidade) {
-        for (int i = 0; i < quantidade; i++) {
+
+    static void imprimeAsteriscos(int numero){
+        for (int i = 1; i <= numero; i++) {
             System.out.print("*");
         }
-        System.out.println();
     }
 
     //  Exercicio 3 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
@@ -213,6 +215,55 @@ public class Biblioteca {
         }
         return true;
     }
+
+
+    //  Exercicio 7 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+    public static void imprimeQuadrado(char caractere, int linha, int coluna) {
+        for (int i = 0; i < coluna; i++) {
+            System.out.print(caractere);
+        }
+
+        System.out.println();
+
+        for (int i = 0; i < linha-2 ; i++) {
+            System.out.print(caractere);
+            for (int j = 0; j < coluna-2; j++) {
+                System.out.print(" ");
+            }
+            System.out.print(caractere);
+            System.out.println();
+        }
+
+        for (int i = 0; i < coluna; i++) {
+            System.out.print(caractere);
+        }
+    }
+
+
+    //  Exercicio 8 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+    static void somarMatrizes(int[ ][ ] matriz1, int[ ][ ] matriz2) {
+
+        for (int i = 0 ; i < matriz1.length; i++) { //itera linhas
+            for(int j = 0; j < matriz1[i].length; j++){ //itera colunas
+                System.out.print(matriz1[i][j] + matriz2[i][j] + " ");
+            }
+            System.out.println();
+        }
+    }
+
+    static int somatorioMatrizes(int[ ][ ] matriz1, int[ ][ ] matriz2){
+        int somatorio = 0;
+        for (int i = 0 ; i < matriz1.length; i++) {
+            for(int j = 0 ; j < matriz1[i].length; j++){
+                somatorio += matriz1[i][j] + matriz2[i][j];
+            }
+        }
+
+        return somatorio;
+    }
+
 
 }
 

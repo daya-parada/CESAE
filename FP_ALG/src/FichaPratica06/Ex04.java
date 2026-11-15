@@ -1,6 +1,5 @@
 package FichaPratica06;
-import java.util.Scanner;
-import static FichaPratica06.Biblioteca.*;
+import static FichaPratica06.BibliotecaFP6.*;
 public class Ex04 {
     public static void main(String[] args) {
         int opcao;
