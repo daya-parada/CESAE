@@ -252,6 +252,12 @@ public class BibliotecaFP6 {
         }
     }
 
+    /**
+     * Funcão que calcula o somatorio através da iteração de 2 matrizes ao mesmo tempo
+     * @param matriz1
+     * @param matriz2
+     * @return somatorio de 2 matrizes
+     */
     static int somatorioMatrizes(int[ ][ ] matriz1, int[ ][ ] matriz2){
         int somatorio = 0;
         for (int i = 0 ; i < matriz1.length; i++) {

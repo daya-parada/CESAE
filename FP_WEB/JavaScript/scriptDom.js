@@ -17,7 +17,7 @@ nameForm.addEventListener("submit", (event) => {
   event.preventDefault();
   feedbackMessage.textContent = "Nome enviado com sucesso!";
 });
-// xx==xx== FIM Formulario Tarefas xx==xx== //
+// xx==xx== FIM Formulario Nome xx==xx== //
 
 // xx==xx==xx==xx==xx==xx== Inicio do Formulario Tarefas xx==xx==xx==xx==xx==xx== //
 const taskForm = document.getElementById("taskForm");
