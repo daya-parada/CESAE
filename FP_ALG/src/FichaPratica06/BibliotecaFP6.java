@@ -240,7 +240,6 @@ public class BibliotecaFP6 {
         }
     }
 
-
     //  Exercicio 8 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
     static void somarMatrizes(int[ ][ ] matriz1, int[ ][ ] matriz2) {
@@ -260,11 +259,8 @@ public class BibliotecaFP6 {
                 somatorio += matriz1[i][j] + matriz2[i][j];
             }
         }
-
         return somatorio;
     }
-
-
 }
 
 

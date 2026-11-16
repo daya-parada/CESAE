@@ -13,6 +13,5 @@ public class Ex08 {
         System.out.println("Somatorio: ");
         int somatorio = somatorioMatrizes(matriz1, matriz2);
         System.out.println(somatorio);
-
     }
 }

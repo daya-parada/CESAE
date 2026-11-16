@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Javascript</title>
+    
+    <script src="scriptDom.js" defer></script>
+</head>
+
+<body>
+    <h1 id="pageTitle"></h1>
+    <p id="studentName"></p>
+
+    <!-- formulario nome -->
+    <form id="nameForm">
+        <label for="nameInput">Nome: </label>
+        <input id="nameInput" required>
+        <button type="submit">Enviar</button>
+        <p id="feedbackMessage"></p>
+    </form>
+
+    <!-- formulario add tarefa -->
+    <form id="taskForm">
+        <label for="taskInput">Tarefas: </label>
+        <input id="taskInput" required>
+        <button type="submit">Adicionar</button>
+        <p id="feedbackMessageTask"></p>
+    </form>
+
+    <!-- lista de tarefas -->
+    <ul id="taskList"></ul>
+</body>
+</html>

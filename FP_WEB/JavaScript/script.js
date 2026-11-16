@@ -145,3 +145,9 @@ for (i = 1 ; i <= 10 ; i++) {
     tabuada = mediaArredondada * i
     console.log (`${mediaArredondada} x ${i} = ${tabuada}`)
 }
+
+// student name ----------------- xxxx
+const studentName = document.getElemenById ("studentName");
+
+pageTitle.textContent = "Olá turma!";
+studentName.textContent = "Dayane AP";

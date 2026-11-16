@@ -11,7 +11,6 @@ public class Ex06 {
         int[] vetorUtilizador = lerVetorInteiros(tamanho);
 
         do {
-
             //imprime o vetor
             System.out.print("Vetor: ");
             imprimirVetorInteiros(vetorUtilizador);
