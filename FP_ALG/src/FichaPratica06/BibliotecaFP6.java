@@ -260,9 +260,19 @@ public class BibliotecaFP6 {
      */
     static int somatorioMatrizes(int[ ][ ] matriz1, int[ ][ ] matriz2){
         int somatorio = 0;
-        for (int i = 0 ; i < matriz1.length; i++) {
-            for(int j = 0 ; j < matriz1[i].length; j++){
+        for (int i = 0 ; i < matriz1.length; i++) { //itera linhas
+            for(int j = 0 ; j < matriz1[i].length; j++){ //itera colunas
                 somatorio += matriz1[i][j] + matriz2[i][j];
+            }
+        }
+        return somatorio;
+    }
+
+    static int somatorioArray(int[ ] vetor1, int[ ] vetor2){
+        int somatorio = 0;
+        for (int i = 0 ; i < vetor1.length; i++) { //itera linhas
+            for(int j = 0 ; j < vetor1.length; j++){ //itera colunas
+                somatorio += vetor1[i] + vetor2[i];
             }
         }
         return somatorio;

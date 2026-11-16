@@ -70,4 +70,3 @@ taskForm.addEventListener("submit", (event) => {
   feedbackMessageTask.textContent = "Tarefa adicionada com sucesso!";
 });
 // xx==xx== FIM Formulario Tarefas xx==xx== //
-
