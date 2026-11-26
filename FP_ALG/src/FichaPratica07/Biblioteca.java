@@ -5,6 +5,8 @@ import java.io.FileNotFoundException;
 import java.io.PrintWriter;
 import java.util.Scanner;
 
+import static FichaPratica06.BibliotecaFP6.*;
+
 public class Biblioteca {
 
     //  Exercicio 1 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
@@ -133,7 +135,7 @@ public class Biblioteca {
     }
 
     //  Exercicio 7 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-    public static void contaLinhas(String caminho) throws FileNotFoundException{
+    public static void contarLinhasEpalavras(String caminho) throws FileNotFoundException{
         File file = new File(caminho);
         Scanner sc = new Scanner(file);
 
@@ -186,22 +188,23 @@ public class Biblioteca {
 
     //  Exercicio 9 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
     /**
-     * Função que conta o número de músicas (linhas) no ficheiro CSV (ignorando a primeira linha)
+     * Função que conta o número de linhas no ficheiro CSV (ignorando um cabeçalho)
      * @param caminho
-     * @return numero de musicas (linhas) num ficheiro CSV
+     * @return numero de linhas num ficheiro CSV
      * @throws FileNotFoundException
      */
-    public static int contarMusicasFicheiro(String caminho) throws FileNotFoundException {
-        File file = new File(caminho);
-        Scanner sc = new Scanner(file);
-
+    public static int contaLinha(String caminho) throws FileNotFoundException {
+        File file = new File(caminho); //cria ou acessa o file
+        Scanner sc = new Scanner(file); //cria o scanner e o associa ao file
         int contador = 0;
-        if (sc.hasNextLine()) {
+
+        if (sc.hasNextLine()) { //ignora a primeira linha
             sc.nextLine();
         }
-        while (sc.hasNextLine()) {
-            contador = contador + 1;
-            sc.nextLine();
+
+        while (sc.hasNextLine()) { //enquanto houver linhas em file
+            contador = contador + 1; // soma uma linha a cada ciclo
+            sc.nextLine(); // pula para a proxima linha
         }
 
         sc.close();
@@ -209,38 +212,28 @@ public class Biblioteca {
     }
 
     /**
-     * Le um ficheiro CSV e escreve-os em uma matriz
+     * Imprime elementos de uma determinada coluna.
      * @param caminho
-     * @return matriz com nome, artista, genero
      * @throws FileNotFoundException
      */
-    public static String[][] lerMusicas(String caminho) throws FileNotFoundException {
-        int numMusicas = contarMusicasFicheiro(caminho);
-        String [][] matriz = new String[numMusicas][14];
 
+    public static void imprimirColunaFicheiro(String caminho, int coluna) throws FileNotFoundException {
         File file = new File(caminho);
         Scanner sc = new Scanner(file);
 
-        if (sc.hasNextLine()) { //pula o cabecalho
+        if (sc.hasNextLine()) { //ignora a primeira linha
             sc.nextLine();
         }
 
-        int i = 0;
-        while (sc.hasNextLine()) {
-            String linha = sc.nextLine();
-            String [] itensDaLinha = linha.split(",");
+        while (sc.hasNextLine()) { //enquanto houver linhas em file
+            String linha = sc.nextLine(); //pula para a proxima linha
+            String[] elementos = linha.split(",");
 
-            matriz[i] = itensDaLinha;
-            matriz[i][15] = itensDaLinha[15];
-            matriz[i][16] = itensDaLinha[16];
-            matriz[i][17] = itensDaLinha[17];
-
-            i = i+ 1;
+            if (coluna < elementos.length) {
+                System.out.println("Opção 1: "elementos[coluna]);
+            }
         }
 
         sc.close();
-        return matriz;
     }
-
-
 }
