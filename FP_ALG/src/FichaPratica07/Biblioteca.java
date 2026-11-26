@@ -132,6 +132,21 @@ public class Biblioteca {
         System.out.println("O nome do mais velho é " + nomeMaisVelho + " que tem " + maiorIdade + " anos.");
     }
 
+    //  Exercicio 7 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+    public static void contaLinhas(String caminho) throws FileNotFoundException{
+        File file = new File(caminho);
+        Scanner sc = new Scanner(file);
+
+        int contadorLinhas = 0;
+        int contadorColunas = 0;
+
+        while (sc.hasNextLine()) {
+            String linha = sc.nextLine(); // le linha no file origem
+        }
+
+    }
+
+
     //  Exercicio 9 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
     /**
      * Função que conta o número de músicas (linhas) no ficheiro CSV (ignorando a primeira linha)
