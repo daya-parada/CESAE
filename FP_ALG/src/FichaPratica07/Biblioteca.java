@@ -18,8 +18,8 @@ public class Biblioteca {
         Scanner sc = new Scanner(file); //cria o scanner e o associa ao file
 
         while (sc.hasNextLine()) { // le e imprime linha a linha, enquanto houver conteudo
-            String linha = sc.nextLine();
-            System.out.println(linha);
+            String linha = sc.nextLine(); // le linha no file
+            System.out.println(linha); // imprime linha na consola
         }
         sc.close(); //fecha o file
     }
@@ -93,6 +93,44 @@ public class Biblioteca {
         sc.close();
     }
 
+    //  Exercicio 5 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+    public static int somaColuna(String caminho) throws FileNotFoundException {
+        File file = new File(caminho);
+        Scanner sc = new Scanner(file);
+        int soma = 0;
+
+        while (sc.hasNextLine()) { //enquanto houver linhas em file
+                soma = soma + sc.nextInt(); //sc.nextInt le ate o proximo numero inteiro
+        }
+
+        sc.close();
+        return soma;
+    }
+
+    //  Exercicio 6 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+    public static void imprimeNomedoMaisVelho(String caminho) throws FileNotFoundException{
+        File file = new File(caminho);
+        Scanner sc = new Scanner(file);
+        int maiorIdade = 0;
+        String nomeMaisVelho = ""; //inicia nomeMaisVelho antes do ciclo
+
+
+        while (sc.hasNextLine()) { //enquanto houver linhas em file
+            String linha = sc.nextLine(); // le linha no file origem
+            String[] colunas = linha.split(","); // cria um array e define "," como o fim de cada index
+
+           String nome = colunas[0]; //indice 0 tem os nomes
+           int idade = Integer.parseInt(colunas[1]); //indice 1 tem as idades
+
+            if (idade > maiorIdade){
+                maiorIdade = idade;
+                nomeMaisVelho = nome;
+            }
+        }
+
+        sc.close();
+        System.out.println("O nome do mais velho é " + nomeMaisVelho + " que tem " + maiorIdade + " anos.");
+    }
 
     //  Exercicio 9 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
     /**
