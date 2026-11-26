@@ -13,7 +13,7 @@ public class Biblioteca {
      * @param parametro
      * @throws FileNotFoundException
      */
-    public static void leFicheiros(String parametro) throws FileNotFoundException {
+    public static void escreveFicheiros(String parametro) throws FileNotFoundException {
         File file = new File(parametro);
         PrintWriter printWriter= new PrintWriter(file);
 
@@ -23,6 +23,4 @@ public class Biblioteca {
 
         printWriter.close();
     }
-
-    public static void
 }
