@@ -138,12 +138,49 @@ public class Biblioteca {
         Scanner sc = new Scanner(file);
 
         int contadorLinhas = 0;
-        int contadorColunas = 0;
+        int contadorPalavras = 0;
 
-        while (sc.hasNextLine()) {
-            String linha = sc.nextLine(); // le linha no file origem
+        while (sc.hasNextLine()) { //enquanto houver linhas em file
+            String linha = sc.nextLine(); // le linha no file
+            contadorLinhas = contadorLinhas + 1; //incrementa o contador a cada ciclo
+
+            String[] palavras = linha.split(" "); // cria um array palavras[] e define " " como separador
+            contadorPalavras = contadorPalavras + palavras.length; // total acumulado + tamanho total do array
+        }
+        sc.close();
+
+        System.out.println("Total de Linhas: " + contadorLinhas);
+        System.out.println("Total de Palavras: " + contadorPalavras);
+    }
+
+    //  Exercicio 8 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+    /**
+     * Le um ficheiro e calcula o lucro a partir do valor unitario de produtos e numero de vendas
+     * @param caminho
+     * @return Lucro (total de vendas * preço)
+     * @throws FileNotFoundException
+     */
+    public static double totalVendas(String caminho) throws FileNotFoundException {
+        File file = new File(caminho); //cria ou acessa o file
+        Scanner sc = new Scanner(file); //cria o scanner e o associa ao file
+        double lucro = 0;
+
+        if (sc.hasNextLine()) { //salta o cabeçalho
+            sc.nextLine();
         }
 
+        while (sc.hasNextLine()) { //enquanto houver linhas em file
+            String linha = sc.nextLine(); // le linha no file
+            String[] colunas = linha.split(","); // cria um array colunas e separa por ","
+
+            int quantidadeVendida = Integer.parseInt(colunas[2]); //converte quantidade para int
+            double preco = Double.parseDouble(colunas[3]); //converte preço para double
+
+            lucro = lucro + quantidadeVendida * preco; //acumula o lucro do ciclo anterior, ao novo quantidade*preço
+        }
+        sc.close();
+        return lucro;
     }
 
 
